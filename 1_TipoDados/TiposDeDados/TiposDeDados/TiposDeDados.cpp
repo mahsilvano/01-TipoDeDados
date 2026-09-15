@@ -71,8 +71,70 @@ int main()
 	cout << "Sua idade em horas e: " << horas << endl;
 	cout << "Sua idade em minutos e: " << minutos << endl;
 
+	cout << endl << endl;
+
 	cout << "Qualquer tecla para sair...";
 	system("pause"); // somente no Windows
+	system("cls");
+
+
+	//Exercicio 2
+
+	cout << "Conversao de Temperatura" << endl;
+	cout << "================" << endl;
+
+	double  temperatura = 0;
+	double fahrenheit = 0;
+	double kelvin = 0;
+
+	cout << "Digite a temperatura em celsius: ";
+	cin >> temperatura;
+	fahrenheit = temperatura * 1.8 + 32;
+	cout << "Sua temperatura em Fahrenheit e: " << fahrenheit << endl;
+	kelvin = temperatura + 273.15;
+	cout << "Sua temperatura em Kelvin e: " << kelvin << endl;
+
+	cout << endl << endl;
+
+	cout << "Qualquer tecla para sair...";
+	system("pause"); // somente no Windows
+	system("cls");
+
+	//Exercicio 3
+
+	cout << "Conversao de Segundos" << endl;
+	cout << "================" << endl;
+
+	long segundo = 0;
+	long dia = 0;
+	long hora = 0;
+	long minuto = 0;
+	long segundosRest = 0;
+
+	cout << "Digite os segundos: ";
+	cin >> segundo;
+	minuto = segundo / 60;
+	cout << "Sao minutos: " << minuto << endl;
+	dia = minuto / 60;
+	cout << "Sao dias: " << dia << endl;
+	hora = minuto / 24;
+	cout << "Sao horas: " << hora << endl;
+	segundosRest = segundo % 60;
+	
+
+	cout << endl << endl;
+
+	cout << "Qualquer tecla para sair...";
+	system("pause"); // somente no Windows
+	system("cls");
+
+
+
+
+
+
+
+
 
 
 }
