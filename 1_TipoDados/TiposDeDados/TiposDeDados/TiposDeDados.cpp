@@ -113,13 +113,16 @@ int main()
 
 	cout << "Digite os segundos: ";
 	cin >> segundo;
-	minuto = segundo / 60;
-	cout << "Sao minutos: " << minuto << endl;
-	dia = minuto / 60;
-	cout << "Sao dias: " << dia << endl;
-	hora = minuto / 24;
-	cout << "Sao horas: " << hora << endl;
-	segundosRest = segundo % 60;
+	
+  	minuto = segundo / 60;
+    segundosRest = segundos % 60;
+    hora = minuto / 60;
+    dia = hora / 24;
+
+    cout << "Dias: " << dia << endl;
+    cout << "Horas: " << hora << endl;
+    cout << "Minutos: " << minuto << endl;
+    cout << "Segundos restantes: " << segundosRest << endl;
 	
 
 	cout << endl << endl;
